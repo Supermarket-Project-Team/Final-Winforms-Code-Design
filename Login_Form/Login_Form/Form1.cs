@@ -21,5 +21,10 @@ namespace Login_Form
         {
 
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

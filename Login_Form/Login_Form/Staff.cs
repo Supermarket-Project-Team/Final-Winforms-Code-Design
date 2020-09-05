@@ -16,5 +16,10 @@ namespace Login_Form
         {
             InitializeComponent();
         }
+
+        private void Staff_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine("hello");
+        }
     }
 }
