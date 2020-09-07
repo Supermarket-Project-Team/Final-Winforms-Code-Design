@@ -20,6 +20,7 @@ namespace Login_Form
         private void Staff_Load(object sender, EventArgs e)
         {
             Console.WriteLine("hello");
+            Console.WriteLine("World!");
         }
     }
 }
