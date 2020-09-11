@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_auditrep = new System.Windows.Forms.Button();
+            this.btn_customer = new System.Windows.Forms.Button();
             this.lbl_mart_name = new System.Windows.Forms.Label();
             this.btn_logout_ad = new System.Windows.Forms.Button();
             this.btn_userc_ad = new System.Windows.Forms.Button();
             this.btn_staff_ad = new System.Windows.Forms.Button();
             this.btn_vendor_ad = new System.Windows.Forms.Button();
             this.btn_stock_ad = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_admin = new System.Windows.Forms.Panel();
             this.lbl_notification_ad = new System.Windows.Forms.Label();
-            this.btn_customer = new System.Windows.Forms.Button();
-            this.btn_auditrep = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btn_auditrep);
             this.panel1.Controls.Add(this.btn_customer);
             this.panel1.Controls.Add(this.lbl_mart_name);
@@ -56,8 +56,35 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 503);
+            this.panel1.Size = new System.Drawing.Size(250, 536);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_auditrep
+            // 
+            this.btn_auditrep.FlatAppearance.BorderSize = 0;
+            this.btn_auditrep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_auditrep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_auditrep.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_auditrep.Location = new System.Drawing.Point(20, 346);
+            this.btn_auditrep.Name = "btn_auditrep";
+            this.btn_auditrep.Size = new System.Drawing.Size(249, 30);
+            this.btn_auditrep.TabIndex = 7;
+            this.btn_auditrep.Text = "Audit Report";
+            this.btn_auditrep.UseVisualStyleBackColor = true;
+            // 
+            // btn_customer
+            // 
+            this.btn_customer.FlatAppearance.BorderSize = 0;
+            this.btn_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_customer.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_customer.Location = new System.Drawing.Point(20, 310);
+            this.btn_customer.Name = "btn_customer";
+            this.btn_customer.Size = new System.Drawing.Size(249, 30);
+            this.btn_customer.TabIndex = 6;
+            this.btn_customer.Text = "Customer";
+            this.btn_customer.UseVisualStyleBackColor = true;
+            this.btn_customer.Click += new System.EventHandler(this.btn_customer_Click);
             // 
             // lbl_mart_name
             // 
@@ -84,6 +111,7 @@
             this.btn_logout_ad.TabIndex = 4;
             this.btn_logout_ad.Text = "Log Out";
             this.btn_logout_ad.UseVisualStyleBackColor = true;
+            this.btn_logout_ad.Click += new System.EventHandler(this.btn_logout_ad_Click);
             // 
             // btn_userc_ad
             // 
@@ -97,7 +125,7 @@
             this.btn_userc_ad.TabIndex = 3;
             this.btn_userc_ad.Text = "User Creation";
             this.btn_userc_ad.UseVisualStyleBackColor = true;
-            this.btn_userc_ad.Click += new System.EventHandler(this.button4_Click);
+            this.btn_userc_ad.Click += new System.EventHandler(this.btn_userc_ad_Click);
             // 
             // btn_staff_ad
             // 
@@ -111,6 +139,7 @@
             this.btn_staff_ad.TabIndex = 2;
             this.btn_staff_ad.Text = "Staff";
             this.btn_staff_ad.UseVisualStyleBackColor = true;
+            this.btn_staff_ad.Click += new System.EventHandler(this.btn_staff_ad_Click);
             // 
             // btn_vendor_ad
             // 
@@ -124,11 +153,13 @@
             this.btn_vendor_ad.TabIndex = 1;
             this.btn_vendor_ad.Text = "Vendor";
             this.btn_vendor_ad.UseVisualStyleBackColor = true;
+            this.btn_vendor_ad.Click += new System.EventHandler(this.btn_vendor_ad_Click);
             // 
             // btn_stock_ad
             // 
-            this.btn_stock_ad.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_stock_ad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_stock_ad.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_stock_ad.FlatAppearance.BorderSize = 0;
             this.btn_stock_ad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_stock_ad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stock_ad.ForeColor = System.Drawing.SystemColors.Control;
@@ -138,14 +169,16 @@
             this.btn_stock_ad.TabIndex = 0;
             this.btn_stock_ad.Text = "Stock";
             this.btn_stock_ad.UseVisualStyleBackColor = false;
+            this.btn_stock_ad.Click += new System.EventHandler(this.btn_stock_ad_Click);
             // 
-            // panel2
+            // panel_admin
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Location = new System.Drawing.Point(323, 105);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(516, 386);
-            this.panel2.TabIndex = 1;
+            this.panel_admin.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel_admin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_admin.Location = new System.Drawing.Point(256, 0);
+            this.panel_admin.Name = "panel_admin";
+            this.panel_admin.Size = new System.Drawing.Size(828, 536);
+            this.panel_admin.TabIndex = 1;
             // 
             // lbl_notification_ad
             // 
@@ -159,42 +192,17 @@
             this.lbl_notification_ad.Text = "Notification";
             this.lbl_notification_ad.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btn_customer
-            // 
-            this.btn_customer.FlatAppearance.BorderSize = 0;
-            this.btn_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customer.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_customer.Location = new System.Drawing.Point(20, 310);
-            this.btn_customer.Name = "btn_customer";
-            this.btn_customer.Size = new System.Drawing.Size(249, 30);
-            this.btn_customer.TabIndex = 6;
-            this.btn_customer.Text = "Customer";
-            this.btn_customer.UseVisualStyleBackColor = true;
-            // 
-            // btn_auditrep
-            // 
-            this.btn_auditrep.FlatAppearance.BorderSize = 0;
-            this.btn_auditrep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_auditrep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_auditrep.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_auditrep.Location = new System.Drawing.Point(20, 346);
-            this.btn_auditrep.Name = "btn_auditrep";
-            this.btn_auditrep.Size = new System.Drawing.Size(249, 30);
-            this.btn_auditrep.TabIndex = 7;
-            this.btn_auditrep.Text = "Audit Report";
-            this.btn_auditrep.UseVisualStyleBackColor = true;
-            // 
             // AdminLanding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(885, 503);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.lbl_notification_ad);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_admin);
             this.Controls.Add(this.panel1);
             this.Name = "AdminLanding";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminLanding";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -211,7 +219,7 @@
         private System.Windows.Forms.Button btn_staff_ad;
         private System.Windows.Forms.Button btn_vendor_ad;
         private System.Windows.Forms.Button btn_stock_ad;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_admin;
         private System.Windows.Forms.Label lbl_mart_name;
         private System.Windows.Forms.Label lbl_notification_ad;
         private System.Windows.Forms.Button btn_auditrep;

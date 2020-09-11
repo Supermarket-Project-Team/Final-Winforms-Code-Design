@@ -126,6 +126,12 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendor.Designer.cs">
+      <DependentUpon>vendor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminLanding.resx">
       <DependentUpon>AdminLanding.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendor.resx">
+      <DependentUpon>vendor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

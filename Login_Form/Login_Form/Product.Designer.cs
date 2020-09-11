@@ -1,6 +1,6 @@
 ﻿namespace Login_Form
 {
-    partial class Product
+    partial class form_Product
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_product = new System.Windows.Forms.DataGridView();
             this.cbo_subCategory = new System.Windows.Forms.ComboBox();
             this.txt_sgst = new System.Windows.Forms.TextBox();
             this.txt_discount = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.lbl_heading = new System.Windows.Forms.Label();
             this.btn_pro_back = new System.Windows.Forms.Button();
             this.btn_pro_next = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_product)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_delete
@@ -100,17 +100,17 @@
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // dataGridView1
+            // dgv_product
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 305);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1072, 299);
-            this.dataGridView1.TabIndex = 55;
+            this.dgv_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_product.Location = new System.Drawing.Point(21, 305);
+            this.dgv_product.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_product.Name = "dgv_product";
+            this.dgv_product.RowHeadersWidth = 51;
+            this.dgv_product.RowTemplate.Height = 24;
+            this.dgv_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_product.Size = new System.Drawing.Size(1072, 299);
+            this.dgv_product.TabIndex = 55;
             // 
             // cbo_subCategory
             // 
@@ -170,7 +170,6 @@
             this.label7.Size = new System.Drawing.Size(53, 15);
             this.label7.TabIndex = 48;
             this.label7.Text = "SGST%:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -181,7 +180,6 @@
             this.label6.Size = new System.Drawing.Size(69, 15);
             this.label6.TabIndex = 47;
             this.label6.Text = "Discount%:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -192,7 +190,6 @@
             this.label5.Size = new System.Drawing.Size(112, 15);
             this.label5.TabIndex = 46;
             this.label5.Text = "Threshold Quantity:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -203,7 +200,6 @@
             this.label4.Size = new System.Drawing.Size(38, 15);
             this.label4.TabIndex = 45;
             this.label4.Text = "MRP:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -214,7 +210,6 @@
             this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 44;
             this.label3.Text = "Vendor:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -225,7 +220,6 @@
             this.label2.Size = new System.Drawing.Size(83, 15);
             this.label2.TabIndex = 43;
             this.label2.Text = "Sub Category:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_cgst
             // 
@@ -244,7 +238,6 @@
             this.label1.Size = new System.Drawing.Size(56, 15);
             this.label1.TabIndex = 41;
             this.label1.Text = "CGST %:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_profit
             // 
@@ -296,7 +289,6 @@
             this.lbl_profit.Size = new System.Drawing.Size(52, 15);
             this.lbl_profit.TabIndex = 35;
             this.lbl_profit.Text = "Profit %:";
-            this.lbl_profit.Click += new System.EventHandler(this.lbl_profit_Click);
             // 
             // lbl_qty
             // 
@@ -307,7 +299,6 @@
             this.lbl_qty.Size = new System.Drawing.Size(54, 15);
             this.lbl_qty.TabIndex = 34;
             this.lbl_qty.Text = "Quantity:";
-            this.lbl_qty.Click += new System.EventHandler(this.lbl_qty_Click);
             // 
             // lbl_costprice
             // 
@@ -318,7 +309,6 @@
             this.lbl_costprice.Size = new System.Drawing.Size(65, 15);
             this.lbl_costprice.TabIndex = 33;
             this.lbl_costprice.Text = "Cost Price:";
-            this.lbl_costprice.Click += new System.EventHandler(this.lbl_costprice_Click);
             // 
             // lbl_prodname
             // 
@@ -329,7 +319,6 @@
             this.lbl_prodname.Size = new System.Drawing.Size(89, 15);
             this.lbl_prodname.TabIndex = 32;
             this.lbl_prodname.Text = "Product Name:";
-            this.lbl_prodname.Click += new System.EventHandler(this.lbl_prodname_Click);
             // 
             // lbl_category
             // 
@@ -340,7 +329,6 @@
             this.lbl_category.Size = new System.Drawing.Size(58, 15);
             this.lbl_category.TabIndex = 31;
             this.lbl_category.Text = "Category:";
-            this.lbl_category.Click += new System.EventHandler(this.lbl_category_Click);
             // 
             // lbl_heading
             // 
@@ -360,6 +348,7 @@
             this.btn_pro_back.TabIndex = 60;
             this.btn_pro_back.Text = "<-";
             this.btn_pro_back.UseVisualStyleBackColor = true;
+            this.btn_pro_back.Click += new System.EventHandler(this.btn_pro_back_Click);
             // 
             // btn_pro_next
             // 
@@ -370,18 +359,18 @@
             this.btn_pro_next.Text = "->";
             this.btn_pro_next.UseVisualStyleBackColor = true;
             // 
-            // Product
+            // form_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1106, 606);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.btn_pro_next);
             this.Controls.Add(this.btn_pro_back);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_product);
             this.Controls.Add(this.cbo_subCategory);
             this.Controls.Add(this.txt_sgst);
             this.Controls.Add(this.txt_discount);
@@ -408,11 +397,12 @@
             this.Controls.Add(this.lbl_category);
             this.Controls.Add(this.lbl_heading);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Product";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "form_Product";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product";
             this.Load += new System.EventHandler(this.Product_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_product)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,7 +413,7 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_product;
         private System.Windows.Forms.ComboBox cbo_subCategory;
         private System.Windows.Forms.TextBox txt_sgst;
         private System.Windows.Forms.TextBox txt_discount;

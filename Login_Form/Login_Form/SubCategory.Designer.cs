@@ -162,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 521);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.cb_category_name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.link_Category);
@@ -176,6 +176,7 @@
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.lbl_subcategory);
             this.Name = "SubCategory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SubCategory";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_category)).EndInit();
             this.ResumeLayout(false);

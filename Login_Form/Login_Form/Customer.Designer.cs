@@ -1,6 +1,6 @@
 ﻿namespace Login_Form
 {
-    partial class Customer
+    partial class form_Customer
     {
         /// <summary>
         /// Required designer variable.
@@ -90,6 +90,7 @@
             this.btn_cust_back.TabIndex = 16;
             this.btn_cust_back.Text = "<-";
             this.btn_cust_back.UseVisualStyleBackColor = true;
+            this.btn_cust_back.Click += new System.EventHandler(this.btn_cust_back_Click);
             // 
             // btn_cust_next
             // 
@@ -100,11 +101,11 @@
             this.btn_cust_next.Text = "->";
             this.btn_cust_next.UseVisualStyleBackColor = true;
             // 
-            // Customer
+            // form_Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 505);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.btn_cust_next);
             this.Controls.Add(this.btn_cust_back);
             this.Controls.Add(this.lbl_customers);
@@ -112,8 +113,10 @@
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.dgv_customers);
-            this.Name = "Customer";
+            this.Name = "form_Customer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.form_Customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customers)).EndInit();
             this.ResumeLayout(false);
 

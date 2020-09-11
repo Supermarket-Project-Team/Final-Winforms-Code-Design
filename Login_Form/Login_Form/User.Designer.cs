@@ -1,6 +1,6 @@
 ﻿namespace Login_Form
 {
-    partial class User
+    partial class form_User
     {
         /// <summary>
         /// Required designer variable.
@@ -191,6 +191,7 @@
             this.btn_user_back.TabIndex = 65;
             this.btn_user_back.Text = "<-";
             this.btn_user_back.UseVisualStyleBackColor = true;
+            this.btn_user_back.Click += new System.EventHandler(this.btn_user_back_Click);
             // 
             // btn_user_next
             // 
@@ -201,11 +202,11 @@
             this.btn_user_next.Text = "->";
             this.btn_user_next.UseVisualStyleBackColor = true;
             // 
-            // User
+            // form_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 504);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.btn_user_next);
             this.Controls.Add(this.btn_user_back);
             this.Controls.Add(this.cb_designation);
@@ -222,8 +223,10 @@
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_save);
-            this.Name = "User";
+            this.Name = "form_User";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User";
+            this.Load += new System.EventHandler(this.form_User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_user_create)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

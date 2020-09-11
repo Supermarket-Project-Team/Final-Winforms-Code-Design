@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Login_Form
 {
-    public partial class Purchase : Form
+    public partial class form_Purchase : Form
     {
-        public Purchase()
+        public form_Purchase()
         {
             InitializeComponent();
+        }
+
+        private void Purchase_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

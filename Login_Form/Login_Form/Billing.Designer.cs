@@ -70,7 +70,6 @@
             this.lbl_productdetails.Size = new System.Drawing.Size(151, 20);
             this.lbl_productdetails.TabIndex = 48;
             this.lbl_productdetails.Text = "Products Details :";
-            this.lbl_productdetails.Click += new System.EventHandler(this.lbl_productdetails_Click);
             // 
             // lbl_customerdetails
             // 
@@ -342,7 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(835, 510);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.btn_bill_next);
             this.Controls.Add(this.btn_bill_back);
             this.Controls.Add(this.btn_bill_cancel);
@@ -373,7 +372,10 @@
             this.Controls.Add(this.lbl_billdate);
             this.Controls.Add(this.lbl_billno);
             this.Name = "Billing";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billing";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Billing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productdetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

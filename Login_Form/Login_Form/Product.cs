@@ -7,12 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Login_Form
 {
-    public partial class Product : Form
+    public partial class form_Product : Form
     {
-        public Product()
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataAdapter adp;
+        DataSet ds;
+        int i;
+        public form_Product()
         {
             InitializeComponent();
         }
@@ -24,67 +30,21 @@ namespace Login_Form
 
         private void Product_Load(object sender, EventArgs e)
         {
+            con = new SqlConnection("data source=KRIPARAJ\\SQLEXPRESS; database=SuperMarket; user ID=sa; Password=Sukritha7###");
+            con.Open();
+            adp = new SqlDataAdapter("SELECT * FROM PRODUCT", con);
+            ds = new DataSet();
+            adp.Fill(ds, "PRODUCT");
 
+            dgv_product.DataSource = ds;
+            dgv_product.DataMember = "PRODUCT";
         }
 
-        private void lbl_prodname_Click(object sender, EventArgs e)
+        private void btn_pro_back_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lbl_costprice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_qty_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_category_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_profit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
+            AdminLanding objadminlanding = new AdminLanding();
+            this.Hide();
+            objadminlanding.Show();
         }
     }
 }

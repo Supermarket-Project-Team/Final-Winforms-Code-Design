@@ -1,6 +1,6 @@
 ﻿namespace Login_Form
 {
-    partial class Purchase
+    partial class form_Purchase
     {
         /// <summary>
         /// Required designer variable.
@@ -167,11 +167,11 @@
             this.btn_orders_next.Text = "->";
             this.btn_orders_next.UseVisualStyleBackColor = true;
             // 
-            // Purchase
+            // form_Purchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 509);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.btn_orders_next);
             this.Controls.Add(this.btn_orders_back);
             this.Controls.Add(this.dgv_orders);
@@ -185,8 +185,10 @@
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.lbl_orders);
-            this.Name = "Purchase";
+            this.Name = "form_Purchase";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Purchase";
+            this.Load += new System.EventHandler(this.Purchase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_orders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

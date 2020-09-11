@@ -1,6 +1,6 @@
 ﻿namespace Login_Form
 {
-    partial class Shelf
+    partial class form_Shelf
     {
         /// <summary>
         /// Required designer variable.
@@ -105,11 +105,11 @@
             this.btn_shelf_next.Text = "->";
             this.btn_shelf_next.UseVisualStyleBackColor = true;
             // 
-            // Shelf
+            // form_Shelf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.btn_shelf_next);
             this.Controls.Add(this.btn_shelf_back);
             this.Controls.Add(this.dgv_shelf);
@@ -117,8 +117,10 @@
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.label1);
-            this.Name = "Shelf";
+            this.Name = "form_Shelf";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shelf";
+            this.Load += new System.EventHandler(this.Shelf_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_shelf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

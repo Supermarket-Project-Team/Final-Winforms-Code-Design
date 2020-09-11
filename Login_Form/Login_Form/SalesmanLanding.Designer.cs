@@ -53,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 508);
+            this.panel1.Size = new System.Drawing.Size(293, 536);
             this.panel1.TabIndex = 6;
             // 
             // panel3
@@ -153,11 +153,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(859, 508);
+            this.ClientSize = new System.Drawing.Size(1084, 536);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_notification_salesman);
             this.Controls.Add(this.panel2);
             this.Name = "SalesmanLanding";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SalesmanLanding";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
